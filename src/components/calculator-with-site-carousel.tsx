@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useCallback } from 'react'
 import { Mic, Trash, Plus, Languages, ChevronRight, ChevronLeft, Edit2, Check, X, Trash2, RotateCcw } from 'lucide-react'
 import { formatDistanceToNow } from 'date-fns'
 
@@ -388,7 +388,6 @@ function SiteCarousel({
 }
 
 export default function CalculatorWithSiteCarousel() {
-  const [timestamp, setTimestamp] = useState('')
   const [multiplier, setMultiplier] = useState('1.1')
   const [fond, setFond] = useState('')
   const [soldeALinstant, setSoldeALinstant] = useState('')

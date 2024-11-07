@@ -434,6 +434,7 @@ export default function CalculatorWithSiteCarousel() {
   ])
   const [currentSiteIndex, setCurrentSiteIndex] = useState(0)
   const [currentFormIndex, setCurrentFormIndex] = useState(0)
+  const [timestamp, setTimestamp] = useState(new Date().toISOString())
 
   const processVoiceInput = (transcript: string, isNumberField: boolean = true): string => {
     if (!isNumberField) {
